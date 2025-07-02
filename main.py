@@ -8,9 +8,9 @@ import argparse
 from IPython.display import display
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--dir-path", type=str,
+parser.add_argument("--dir-path", type=str, required=True,
                     help="example --dir-path ./leaderboard_score")
-parser.add_argument("--weight-list", type=float, nargs='*',
+parser.add_argument("--weight-list", type=float, nargs='*', required=True,
                     help="example --weight-list 0.7 0.3")
 parser.add_argument("--show-info", action="store_true",
                     help="increase output verbosity")
