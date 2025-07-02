@@ -14,7 +14,7 @@ parser.add_argument("--weight-list", type=float, nargs='*',
                     help="example --weight-list 0.7 0.3")
 parser.add_argument("--show-info", action="store_true",
                     help="increase output verbosity")
-parser.add_argument("--csv-output", type=str, default=None,
+parser.add_argument("-o", "--csv-output", type=str, default=None,
                     help="example --csv-output output.csv, Default: None")
 
 args = parser.parse_args()
